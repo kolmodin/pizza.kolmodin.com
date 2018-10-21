@@ -18,4 +18,5 @@ func main() {
 
 func handle(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Hello, world!")
+	fmt.Fprintf(w, "IsDevAppServer: %v", appengine.IsDevAppServer())
 }
