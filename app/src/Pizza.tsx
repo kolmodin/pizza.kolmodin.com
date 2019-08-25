@@ -85,7 +85,10 @@ const Pizza: FunctionComponent<{ initialDoughBalls?: number }> = ({ initialDough
            Lägg lådorna/formen med bollarna i kylen på en låg hylla. Längre upp i kylen är det varmare, då jäser bollarna snabbare. Experimentera med din kyl.
            Bollarna bör vara 24 timmar i kylen för att jäsa ordentligt. Ta ut bollarna 30 minuter innan du planerar att baka ut dem så hinner de bli lite närmre rumstemperatur och de blir lite lättare att baka ut.
            Bollarna kan utan problem vara längre i kylen, 2 dagar går också bra och 3 dagar fungerar med. Ju längre bollarna är i kylen desto mjukare blir degen och de blir svårare att baka ut en vacker pizza. Men... det blir fortfarande gott. :)
+           
+           Se här hur man bakar ut bollen till en pizza.
         </p>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/SjYqw1CLZsA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Tony Gemignani visar hur man bakar ut en pizzaboll till en pizza"></iframe>
     </>
 }
 
