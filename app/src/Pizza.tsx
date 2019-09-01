@@ -46,7 +46,7 @@ const Pizza: FunctionComponent<{ initialDoughBalls?: number }> = ({ initialDough
     const ingrScale = totalWeight / totalRecipeWeight;
     const ingr = (weight: number, fixed: number = 0) => (weight * ingrScale).toFixed(fixed);
 
-    return <>
+    return <div className="pizza-container">
         <h1>pizzakalkylator</h1>
         <p>Degbollar: <input type="number" value={doughBalls} min="1" onChange={event => setDoughBalls(event.target.value)} /></p>
         <p>Bollvikt:
@@ -65,7 +65,7 @@ const Pizza: FunctionComponent<{ initialDoughBalls?: number }> = ({ initialDough
             <li>{ingr(pizza.starter.ljummetVatten)}g ljumet vatten</li>
             <li>{ingr(pizza.starter.torrJast, 2)}g torrjäst</li>
         </ul>
-        <p>Blanda poolish på morgonen dagen innan du vill baka. Tänk på att den blir mycket större när den jäser, så väl en behållare där den kan växa 2-3 gånger i storlek.
+        <p>Blanda poolish på morgonen dagen innan du vill baka. Tänk på att den blir mycket större när den jäser, så välj en behållare där den kan växa 2-3 gånger i storlek.
         Låt den stå i rumstemperatur ca 10-12 timmar eller tills den blivit 2-3 gånger större.</p>
         <b>Deg (kvällen dagen innan)</b>
         <ul>
@@ -101,8 +101,8 @@ const Pizza: FunctionComponent<{ initialDoughBalls?: number }> = ({ initialDough
             <iframe src="https://www.youtube.com/embed/SjYqw1CLZsA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Tony Gemignani visar hur man bakar ut en pizzaboll till en pizza" allowFullScreen></iframe>
         </div>
 
-        <div style={{color: 'gray', paddingTop: '10px', textAlign: 'left'}}>Lennart Kolmodin 2019</div>
-    </>
+        <div style={{ color: 'gray', paddingTop: '10px', textAlign: 'left' }}>Lennart Kolmodin 2019</div>
+    </div>;
 }
 
 export { Pizza };
